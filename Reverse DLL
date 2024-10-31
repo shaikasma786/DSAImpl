@@ -1,0 +1,63 @@
+static Node reverse(Node head)
+        {
+            Node temp=head;
+            Node newhead=null;
+            while(temp!=null)
+            {
+                Node t=temp.next;
+                temp.next=temp.prev;
+                temp.prev=t;
+                newhead=temp;
+                temp=temp.prev;
+            }
+            return newhead;
+        }
+Explanation:-
+
+Certainly! Here's a step-by-step explanation of how this reverse method works:
+
+Steps in the Code
+Initialization:
+
+temp is set to head, starting the reversal process at the head of the list.
+newHead is initially null and will ultimately store the new head of the reversed list.
+Loop through each node:
+
+The loop runs as long as temp is not null, processing each node one by one.
+Swapping next and prev Pointers:
+
+For the current node temp, we temporarily store temp.next in t to keep track of the next node in the original list order.
+We then swap temp.next and temp.prev:
+temp.next is set to temp.prev, making the previous node the "next" node in the reversed list.
+temp.prev is set to t (which holds the original next node), so the node now points back to what was originally the "next" node.
+Updating newHead:
+
+newHead is updated to temp each time, ensuring that it points to the last non-null node processed in the loop. This node will become the head of the reversed list after the loop completes.
+Advancing to the Next Node in the Original Order:
+
+With next and prev swapped, we now move temp to temp.prev. This effectively moves temp to the next node in the original sequence (i.e., forward in the original list order).
+End of Loop:
+
+When temp becomes null, newHead points to the last node processed, which is the new head of the reversed list.
+Example
+Let’s take a small list with nodes 1 <-> 2 <-> 3.
+
+Iteration 1 (temp is at 1):
+
+t is set to 2 (original temp.next).
+Swap: temp.next becomes null (original temp.prev), and temp.prev becomes 2.
+newHead is updated to 1.
+Move temp to temp.prev (node 2).
+Iteration 2 (temp is at 2):
+
+t is set to 3.
+Swap: temp.next becomes 1, and temp.prev becomes 3.
+newHead is updated to 2.
+Move temp to temp.prev (node 3).
+Iteration 3 (temp is at 3):
+
+t is null (original temp.next).
+Swap: temp.next becomes 2, and temp.prev becomes null.
+newHead is updated to 3.
+Move temp to temp.prev (now null).
+The loop ends, and newHead points to 3, the new head of the reversed list 3 <-> 2 <-> 1.
