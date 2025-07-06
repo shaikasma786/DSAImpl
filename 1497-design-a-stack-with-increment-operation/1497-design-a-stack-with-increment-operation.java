@@ -1,5 +1,5 @@
 class CustomStack {
-    static int[]ar;
+    int[]ar;
     int top=-1;
     public CustomStack(int maxSize) {
         ar=new int[maxSize];
