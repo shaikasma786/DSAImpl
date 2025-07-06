@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0860-design-circular-queue](https://github.com/shaikasma786/DSAImpl/tree/master/0860-design-circular-queue) |
+| [1497-design-a-stack-with-increment-operation](https://github.com/shaikasma786/DSAImpl/tree/master/1497-design-a-stack-with-increment-operation) |
 ## Linked List
 |  |
 | ------- |
@@ -13,8 +14,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0860-design-circular-queue](https://github.com/shaikasma786/DSAImpl/tree/master/0860-design-circular-queue) |
+| [1497-design-a-stack-with-increment-operation](https://github.com/shaikasma786/DSAImpl/tree/master/1497-design-a-stack-with-increment-operation) |
 ## Queue
 |  |
 | ------- |
 | [0860-design-circular-queue](https://github.com/shaikasma786/DSAImpl/tree/master/0860-design-circular-queue) |
+## Stack
+|  |
+| ------- |
+| [1497-design-a-stack-with-increment-operation](https://github.com/shaikasma786/DSAImpl/tree/master/1497-design-a-stack-with-increment-operation) |
 <!---LeetCode Topics End-->
